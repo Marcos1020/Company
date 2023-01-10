@@ -1,0 +1,16 @@
+version: '3'
+volumes:
+  postgre_data:
+    driver: local
+services:
+  postgres:
+    image: postgres:10.17
+    container_name: company
+    environment:
+      - "POSTGRES_PASSWORD=company"
+      - "POSTGRES_USER=user"
+    ports:
+        - "5432:5432"
+    volumes:
+      - postgre_data:/var/lib/postgres
+

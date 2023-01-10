@@ -1,0 +1,5 @@
+create table TB_DEPARTAMENTO(
+	ID_DEPARTAMENTO NUMERIC(30)NOT NULL,
+	NOME_DEPARTAMENTO VARCHAR(100)NOT NULL,
+primary key (ID_DEPARTAMENTO));
+create sequence sq_tb_departamento;
